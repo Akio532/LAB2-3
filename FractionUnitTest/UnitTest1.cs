@@ -130,14 +130,6 @@ namespace FractionUnitTest
 			Assert.AreEqual((v1 * v2).ToString(), expected.ToString());
 		}
 
-		[TestMethod]
-		public void multiplication_operatorwithzero()
-		{
-			var v1 = new Fraction(1, 5);
-			var v2 = new Fraction(0, 0);
-			var expected = new Fraction(0, 0);
-			Assert.AreEqual((v1 * v2).ToString(), expected.ToString());
-		}
 
 		[TestMethod]
 		public void division_operatortest()
@@ -148,14 +140,7 @@ namespace FractionUnitTest
 			Assert.AreEqual((v1 / v2).ToString(), expected.ToString());
 		}
 
-		[TestMethod]
-		public void division_operatorwithzero()
-		{
-			var v1 = new Fraction(0, 0);
-			var v2 = new Fraction(1, 5);
-			var expected = new Fraction(0, 0);
-			Assert.AreEqual((v1 / v2).ToString(), expected.ToString());
-		}
+	
 
 		[TestMethod]
 		public void pow_operatortwithzero1()
@@ -165,13 +150,6 @@ namespace FractionUnitTest
 			Assert.AreEqual(Fraction.Pow(v1, 0).ToString(), expected.ToString());
 		}
 
-		[TestMethod]
-        public void pow_operatorwithzero2()
-		{
-			var v1 = new Fraction(0, 0);
-			var expected = new Fraction(0, 0);
-			Assert.AreEqual(Fraction.Pow(v1, 2).ToString(), expected.ToString());
-		}
 
 		[TestMethod]
 		public void pow_operatortest()
