@@ -13,7 +13,7 @@ namespace Task1
 
         public Fraction(int numerator, int denominator)
         {
-            if (denominator == 0 && numerator!=0)
+            if (denominator == 0)
                 throw new DivideByZeroException("В знаменателе не может быть нуля");    
             Numerator = numerator;
             Denominator = denominator;
